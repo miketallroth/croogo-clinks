@@ -1,0 +1,12 @@
+{
+	"name": "Croogo Links",
+	"description": "Creates portable internal Croogo links",
+
+	"author": "Mike Tallroth",
+
+	"dependencies": {
+		"plugins": [
+			"Ckeditor"
+		]
+	}
+}

@@ -1,0 +1,39 @@
+# Clinks (Croogo Links)
+
+**Clinks** is a plugin for the Croogo CMS used to easily create links to internal nodes using the GUI, and which are portable when changing between an alias hosted solution and a default host. It is released under [MIT License](LICENSE.txt).
+
+It is powered by the [Croogo](http://croogo.org) CMS framework.
+
+## Requirements
+  * Croogo 1.5.5 (+?)
+
+## Installation
+
+#### Web based installer
+
+  * Go to Admin > Extensions > Plugins.
+  * Upload the file using the Upload link.
+
+#### Manual installation
+
+  * Extract the archive to the app/Plugin/Clinks directory.
+
+#### Installation using git
+
+  * TBD
+
+#### Activation
+
+  * Go to Admin > Extensions > Plugins.
+  * Click on the activate icon to enable it.
+  * The Ckeditor plugin will deactivate, and re-activate.
+    * This is necessary so that Clinks is bootstrapped before Ckeditor.
+
+## Links
+
+  * TBD
+  * **Official website**: [http://croogo.org](http://croogo.org)
+  * **Blog**: [http://blog.croogo.org](http://blog.croogo.org)
+  * **Downloads**: [http://downloads.croogo.org](http://downloads.croogo.org)
+  * **Issue Tracker**: [http://croogo.lighthouseapp.com](http://croogo.lighthouseapp.com)
+  * **Wiki**: [http://wiki.croogo.org](http://wiki.croogo.org)
