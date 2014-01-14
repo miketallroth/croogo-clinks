@@ -42,8 +42,10 @@
 				));
 			}
 
+			$url = '/type:attachment/slug:' . $attachment['Attachment']['slug'];
+
 			$insertCode = $this->Html->link('', '#', array(
-				'onclick' => "Croogo.Wysiwyg.choose('" . $attachment['Attachment']['slug'] . "');",
+				'onclick' => "Croogo.Wysiwyg.choose('" . $url . "');",
 				'icon' => 'paper-clip',
 				'tooltip' => __d('croogo', 'Insert')
 			));
