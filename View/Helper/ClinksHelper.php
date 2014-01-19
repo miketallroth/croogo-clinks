@@ -22,6 +22,8 @@ class ClinksHelper extends AppHelper {
  */
 	public $helpers = array(
 		'Html',
+		'Layout',
+		'Nodes' => array('className' => 'Nodes.Nodes'),
 	);
 
 	// new experiment (???)
@@ -47,6 +49,7 @@ class ClinksHelper extends AppHelper {
 
 	/**
 	 * setup events
+	 * This hooks the filter in when rendering blocks.
 	 */
 	protected function _setupEvents() {
 		$events = array(
@@ -58,6 +61,14 @@ class ClinksHelper extends AppHelper {
 		foreach ($events as $name => $config) {
 			$eventManager->attach(array($this, 'filter'), $name, $config);
 		}
+	}
+
+	/**
+	 * This hooks the filter in when rendering nodes.
+	 */
+	public function afterSetNode() {
+		$this->Nodes->node['Node']['body'] =
+			$this->Layout->filter($this->filter($this->Nodes->node['Node']['body']));
 	}
 
 	/**
@@ -131,7 +142,6 @@ class ClinksHelper extends AppHelper {
 	}
 
 	public function makeLink($type, $options) {
-		CakeLog::write('debug',print_r($options,true));
 
 		$slug = (array_key_exists('slug', $options)) ? $options['slug'] : 'Missing Link';
 		$value = (array_key_exists('value', $options)) ? $options['value'] : $slug;
