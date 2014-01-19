@@ -1,5 +1,7 @@
 <?php
-	$type = $type ? $type : 'page';
+	if (is_array($type) || empty($type)) {
+		$type = 'page';
+	}
 	$slug = $slug ? $slug : 'missing-link';
 	$value = $value ? $value : $slug;
 
