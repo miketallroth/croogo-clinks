@@ -41,7 +41,7 @@ Configure::write('Wysiwyg.articleBrowseUrl', array(
  */
 $action_config = array(
 	0 => array(
-		'customConfig' => Configure::read('Clink.basePath') . 'clinks/js/ckeditor/config.js',
+		'customConfig' => Configure::read('Clinks.basePath') . 'clinks/js/ckeditor/config.js',
 	),
 );
 Croogo::mergeConfig('Wysiwyg.actions', array(

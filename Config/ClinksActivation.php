@@ -54,13 +54,13 @@ class ClinksActivation {
 		// during bootstrap process.
 		$setting = $controller->Setting->find('first', array(
 			'conditions' => array(
-				'key' => 'Clink.basePath',
+				'key' => 'Clinks.basePath',
 			),
 		));
 		if (!$setting) {
 			$controller->Setting->create();
 			$controller->Setting->save(array(
-				'key' => 'Clink.basePath',
+				'key' => 'Clinks.basePath',
 				'value' => Router::url('/'),
 				'title' => 'App base path',
 				'description' => 'For use during bootstrapping',
@@ -79,7 +79,7 @@ class ClinksActivation {
 	public function onDeactivation(&$controller) {
 		// Remove basePath setting
 		$controller->Setting->deleteAll(array(
-			'key' => 'Clink.basePath',
+			'key' => 'Clinks.basePath',
 		));
 	}
 
