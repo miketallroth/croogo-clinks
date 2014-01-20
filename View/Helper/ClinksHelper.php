@@ -131,6 +131,7 @@ class ClinksHelper extends AppHelper {
 			$url = $this->Html->url('/uploads/' . $slug);
 		} else {
 			$url = $this->Html->url(array(
+				'plugin' => 'nodes',
 				'controller' => 'nodes',
 				'action' => 'view',
 				'type' => $type,
@@ -157,6 +158,7 @@ class ClinksHelper extends AppHelper {
 
 			// handle nodes
 			$link = $this->Html->link($value, array(
+				'plugin' => 'nodes',
 				'controller' => 'nodes',
 				'action' => 'view',
 				'type' => $type,

@@ -9,6 +9,7 @@
 	// (should handle all the regular <a> options)
 
 	echo $this->Html->link($value, array(
+		'plugin' => 'nodes',
 		'controller' => 'nodes',
 		'action' => 'view',
 		'type' => $type,
