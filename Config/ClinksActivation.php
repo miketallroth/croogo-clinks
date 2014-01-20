@@ -11,6 +11,10 @@ App::uses('CroogoPlugin', 'Extensions.Lib');
  */
 class ClinksActivation {
 
+	// new link default status
+	const BP_CONFIG_OPTION = 'Clinks.basePath';
+	const BP_TITLE = 'App base path';
+
 /**
  * onActivate will be called if this returns true
  *
@@ -54,15 +58,15 @@ class ClinksActivation {
 		// during bootstrap process.
 		$setting = $controller->Setting->find('first', array(
 			'conditions' => array(
-				'key' => 'Clinks.basePath',
+				'key' => self::BP_CONFIG_OPTION,
 			),
 		));
 		if (!$setting) {
 			$controller->Setting->create();
 			$controller->Setting->save(array(
-				'key' => 'Clinks.basePath',
+				'key' => self::BP_CONFIG_OPTION,
 				'value' => Router::url('/'),
-				'title' => 'App base path',
+				'title' => self::BP_TITLE,
 				'description' => 'For use during bootstrapping',
 				'input_type' => 'text',
 				'editable' => 0,
@@ -79,7 +83,7 @@ class ClinksActivation {
 	public function onDeactivation(&$controller) {
 		// Remove basePath setting
 		$controller->Setting->deleteAll(array(
-			'key' => 'Clinks.basePath',
+			'key' => self::BP_CONFIG_OPTION,
 		));
 	}
 
