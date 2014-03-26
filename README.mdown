@@ -39,8 +39,7 @@ It is powered by the [Croogo](http://croogo.org) CMS framework.
 ## Links
 
   * TBD
-  * **Official website**: [http://croogo.org](http://croogo.org)
-  * **Blog**: [http://blog.croogo.org](http://blog.croogo.org)
-  * **Downloads**: [http://downloads.croogo.org](http://downloads.croogo.org)
-  * **Issue Tracker**: [http://croogo.lighthouseapp.com](http://croogo.lighthouseapp.com)
-  * **Wiki**: [http://wiki.croogo.org](http://wiki.croogo.org)
+  * **Official website**: [https://github.com/miketallroth/croogo-clinks](https://github.com/miketallroth/croogo-clinks)
+  * **Downloads**: [https://github.com/miketallroth/croogo-clinks/archive/master.zip](https://github.com/miketallroth/croogo-clinks/archive/master.zip)
+  * **Issue Tracker**: [https://github.com/miketallroth/croogo-clinks/issues](https://github.com/miketallroth/croogo-clinks/issues)
+  * **Wiki**: [https://github.com/miketallroth/croogo-clinks/wiki](https://github.com/miketallroth/croogo-clinks/wiki)
