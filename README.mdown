@@ -5,7 +5,8 @@
 It is powered by the [Croogo](http://croogo.org) CMS framework.
 
 ## Requirements
-  * Croogo 1.5.5 (+?)
+  * Croogo 1.5.5 (+?) (works on Croogo 1.5.7)
+  * Not tested on 2.0
 
 ## Installation
 
@@ -28,6 +29,12 @@ It is powered by the [Croogo](http://croogo.org) CMS framework.
   * Click on the activate icon to enable it.
   * The Ckeditor plugin will deactivate, and re-activate.
     * This is necessary so that Clinks is bootstrapped before Ckeditor.
+
+## Todo
+
+  * Complete linking to photos
+    * Plan to either work w/ gallery plugin, or
+    * filtered attachments (*.jpg, *.png, etc)
 
 ## Links
 
